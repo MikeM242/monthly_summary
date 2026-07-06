@@ -1,0 +1,845 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Monthly Weather Summary</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f7;
+    margin: 25px;
+}
+
+h1 {
+    color: #1f4e79;
+}
+
+h2 {
+    color: #2e75b6;
+    margin-top: 35px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+    padding: 8px 12px;
+}
+
+th:first-child {
+    background: #3f5f80;
+}
+
+td {
+    border: 1px solid #999;
+    padding: 6px 10px;
+    text-align: center;
+    min-width: 55px;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Monthly Weather Summary</h1>
+
+<h2>Average High Temperature (°F)</h2><table>
+<tr><th>Year</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+<th>Average</th>
+</tr>
+<tr><th>2020</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#00c8a1;color:white;font-weight:bold;">46.2</td>
+<td style="background:#00c8a1;color:white;font-weight:bold;">46.2</td>
+</tr>
+<tr><th>2021</th>
+<td style="background:#00c8f2;color:white;font-weight:bold;">40.3</td>
+<td style="background:#00c8fb;color:white;font-weight:bold;">39.6</td>
+<td style="background:#00c837;color:white;font-weight:bold;">53.9</td>
+<td style="background:#3fcd00;color:white;font-weight:bold;">62.6</td>
+<td style="background:#b7d600;color:black;font-weight:bold;">71.3</td>
+<td style="background:#f4a40c;color:black;font-weight:bold;">82.3</td>
+<td style="background:#f08f10;color:white;font-weight:bold;">84.4</td>
+<td style="background:#ef8e11;color:white;font-weight:bold;">84.5</td>
+<td style="background:#f9c006;color:black;font-weight:bold;">79.4</td>
+<td style="background:#b4d600;color:black;font-weight:bold;">71.1</td>
+<td style="background:#00c824;color:white;font-weight:bold;">55.3</td>
+<td style="background:#00c872;color:white;font-weight:bold;">49.6</td>
+<td style="background:#5acf00;color:white;font-weight:bold;">64.5</td>
+</tr>
+<tr><th>2022</th>
+<td style="background:#00c0ff;color:white;font-weight:bold;">38.3</td>
+<td style="background:#00c8a5;color:white;font-weight:bold;">45.9</td>
+<td style="background:#00c843;color:white;font-weight:bold;">53.0</td>
+<td style="background:#1dca00;color:white;font-weight:bold;">60.1</td>
+<td style="background:#ddd900;color:black;font-weight:bold;">74.1</td>
+<td style="background:#f6b009;color:black;font-weight:bold;">81.0</td>
+<td style="background:#e96b18;color:white;font-weight:bold;">88.1</td>
+<td style="background:#e96e18;color:white;font-weight:bold;">87.8</td>
+<td style="background:#f9c205;color:black;font-weight:bold;">79.2</td>
+<td style="background:#81d200;color:black;font-weight:bold;">67.4</td>
+<td style="background:#08c800;color:white;font-weight:bold;">58.6</td>
+<td style="background:#00c8af;color:white;font-weight:bold;">45.2</td>
+<td style="background:#5fcf00;color:white;font-weight:bold;">64.9</td>
+</tr>
+<tr><th>2023</th>
+<td style="background:#00c884;color:white;font-weight:bold;">48.3</td>
+<td style="background:#00c86f;color:white;font-weight:bold;">49.8</td>
+<td style="background:#00c878;color:white;font-weight:bold;">49.2</td>
+<td style="background:#6ed000;color:white;font-weight:bold;">66.0</td>
+<td style="background:#bcd600;color:black;font-weight:bold;">71.7</td>
+<td style="background:#fccc03;color:black;font-weight:bold;">78.1</td>
+<td style="background:#eb7716;color:white;font-weight:bold;">86.9</td>
+<td style="background:#f3a10d;color:black;font-weight:bold;">82.6</td>
+<td style="background:#fcd002;color:black;font-weight:bold;">77.7</td>
+<td style="background:#9fd400;color:black;font-weight:bold;">69.6</td>
+<td style="background:#00c83f;color:white;font-weight:bold;">53.3</td>
+<td style="background:#00c872;color:white;font-weight:bold;">49.6</td>
+<td style="background:#63cf00;color:white;font-weight:bold;">65.2</td>
+</tr>
+<tr><th>2024</th>
+<td style="background:#00c8e4;color:white;font-weight:bold;">41.3</td>
+<td style="background:#00c8ac;color:white;font-weight:bold;">45.4</td>
+<td style="background:#00c81a;color:white;font-weight:bold;">56.0</td>
+<td style="background:#36cc00;color:white;font-weight:bold;">61.9</td>
+<td style="background:#c2d700;color:black;font-weight:bold;">72.1</td>
+<td style="background:#f29d0d;color:black;font-weight:bold;">83.0</td>
+<td style="background:#ee8612;color:white;font-weight:bold;">85.3</td>
+<td style="background:#f08f10;color:white;font-weight:bold;">84.4</td>
+<td style="background:#fdd202;color:black;font-weight:bold;">77.5</td>
+<td style="background:#b5d600;color:black;font-weight:bold;">71.2</td>
+<td style="background:#0ec900;color:white;font-weight:bold;">59.0</td>
+<td style="background:#00c8c4;color:white;font-weight:bold;">43.6</td>
+<td style="background:#61cf00;color:white;font-weight:bold;">65.1</td>
+</tr>
+<tr><th>2025</th>
+<td style="background:#00b5ff;color:white;font-weight:bold;">36.8</td>
+<td style="background:#00c8da;color:white;font-weight:bold;">42.0</td>
+<td style="background:#00c821;color:white;font-weight:bold;">55.5</td>
+<td style="background:#41cd00;color:white;font-weight:bold;">62.7</td>
+<td style="background:#acd500;color:black;font-weight:bold;">70.5</td>
+<td style="background:#f4a70b;color:black;font-weight:bold;">81.9</td>
+<td style="background:#e86919;color:white;font-weight:bold;">88.3</td>
+<td style="background:#f3a00d;color:black;font-weight:bold;">82.7</td>
+<td style="background:#fac405;color:black;font-weight:bold;">78.9</td>
+<td style="background:#75d100;color:white;font-weight:bold;">66.5</td>
+<td style="background:#00c838;color:white;font-weight:bold;">53.8</td>
+<td style="background:#00c8ea;color:white;font-weight:bold;">40.9</td>
+<td style="background:#4acd00;color:white;font-weight:bold;">63.4</td>
+</tr>
+<tr><th>2026</th>
+<td style="background:#00b3ff;color:white;font-weight:bold;">36.5</td>
+<td style="background:#00c0ff;color:white;font-weight:bold;">38.3</td>
+<td style="background:#00c845;color:white;font-weight:bold;">52.9</td>
+<td style="background:#4ece00;color:white;font-weight:bold;">63.7</td>
+<td style="background:#b4d600;color:black;font-weight:bold;">71.1</td>
+<td style="background:#f29a0e;color:black;font-weight:bold;">83.3</td>
+<td style="background:#dc2828;color:white;font-weight:bold;">95.1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#45cd00;color:white;font-weight:bold;">63.0</td>
+</tr>
+<tr>
+<th style="background:#3f5f80;color:white;">Average</th>
+<td style="background:#00c8f2;color:white;font-weight:bold;">40.2</td>
+<td style="background:#00c8c6;color:white;font-weight:bold;">43.5</td>
+<td style="background:#00c83e;color:white;font-weight:bold;">53.4</td>
+<td style="background:#43cd00;color:white;font-weight:bold;">62.8</td>
+<td style="background:#bed600;color:black;font-weight:bold;">71.8</td>
+<td style="background:#f5aa0a;color:black;font-weight:bold;">81.6</td>
+<td style="background:#e96c18;color:white;font-weight:bold;">88.0</td>
+<td style="background:#f08f10;color:white;font-weight:bold;">84.4</td>
+<td style="background:#fbc804;color:black;font-weight:bold;">78.5</td>
+<td style="background:#99d400;color:black;font-weight:bold;">69.2</td>
+<td style="background:#00c81a;color:white;font-weight:bold;">56.0</td>
+<td style="background:#00c8a6;color:white;font-weight:bold;">45.8</td>
+<td style="background:#5bcf00;color:white;font-weight:bold;">64.6</td>
+</tr>
+</table>
+<h2>Average Low Temperature (°F)</h2><table>
+<tr><th>Year</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+<th>Average</th>
+</tr>
+<tr><th>2020</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#007cff;color:white;font-weight:bold;">28.6</td>
+<td style="background:#007cff;color:white;font-weight:bold;">28.6</td>
+</tr>
+<tr><th>2021</th>
+<td style="background:#0070ff;color:white;font-weight:bold;">26.9</td>
+<td style="background:#0070ff;color:white;font-weight:bold;">26.9</td>
+<td style="background:#009eff;color:white;font-weight:bold;">33.4</td>
+<td style="background:#00c8dd;color:white;font-weight:bold;">41.8</td>
+<td style="background:#00c86e;color:white;font-weight:bold;">49.9</td>
+<td style="background:#32cb00;color:white;font-weight:bold;">61.6</td>
+<td style="background:#78d100;color:white;font-weight:bold;">66.7</td>
+<td style="background:#90d300;color:black;font-weight:bold;">68.5</td>
+<td style="background:#2fcb00;color:white;font-weight:bold;">61.4</td>
+<td style="background:#00c83a;color:white;font-weight:bold;">53.7</td>
+<td style="background:#00a4ff;color:white;font-weight:bold;">34.3</td>
+<td style="background:#00aeff;color:white;font-weight:bold;">35.8</td>
+<td style="background:#00c899;color:white;font-weight:bold;">46.7</td>
+</tr>
+<tr><th>2022</th>
+<td style="background:#0046ff;color:white;font-weight:bold;">20.8</td>
+<td style="background:#0067ff;color:white;font-weight:bold;">25.6</td>
+<td style="background:#00a3ff;color:white;font-weight:bold;">34.2</td>
+<td style="background:#00c8e1;color:white;font-weight:bold;">41.5</td>
+<td style="background:#00c83f;color:white;font-weight:bold;">53.3</td>
+<td style="background:#19c900;color:white;font-weight:bold;">59.8</td>
+<td style="background:#92d300;color:black;font-weight:bold;">68.6</td>
+<td style="background:#92d300;color:black;font-weight:bold;">68.6</td>
+<td style="background:#12c900;color:white;font-weight:bold;">59.3</td>
+<td style="background:#00c896;color:white;font-weight:bold;">47.0</td>
+<td style="background:#00c4ff;color:white;font-weight:bold;">38.9</td>
+<td style="background:#007aff;color:white;font-weight:bold;">28.3</td>
+<td style="background:#00c8ab;color:white;font-weight:bold;">45.5</td>
+</tr>
+<tr><th>2023</th>
+<td style="background:#00a3ff;color:white;font-weight:bold;">34.1</td>
+<td style="background:#0082ff;color:white;font-weight:bold;">29.5</td>
+<td style="background:#00a9ff;color:white;font-weight:bold;">35.0</td>
+<td style="background:#00c8a4;color:white;font-weight:bold;">46.0</td>
+<td style="background:#00c87d;color:white;font-weight:bold;">48.8</td>
+<td style="background:#12c900;color:white;font-weight:bold;">59.3</td>
+<td style="background:#9bd400;color:black;font-weight:bold;">69.3</td>
+<td style="background:#74d100;color:white;font-weight:bold;">66.4</td>
+<td style="background:#2fcb00;color:white;font-weight:bold;">61.4</td>
+<td style="background:#00c86a;color:white;font-weight:bold;">50.2</td>
+<td style="background:#00a3ff;color:white;font-weight:bold;">34.2</td>
+<td style="background:#00aaff;color:white;font-weight:bold;">35.2</td>
+<td style="background:#00c890;color:white;font-weight:bold;">47.4</td>
+</tr>
+<tr><th>2024</th>
+<td style="background:#0082ff;color:white;font-weight:bold;">29.5</td>
+<td style="background:#0081ff;color:white;font-weight:bold;">29.3</td>
+<td style="background:#00bbff;color:white;font-weight:bold;">37.6</td>
+<td style="background:#00c8d6;color:white;font-weight:bold;">42.3</td>
+<td style="background:#00c837;color:white;font-weight:bold;">53.9</td>
+<td style="background:#50ce00;color:white;font-weight:bold;">63.8</td>
+<td style="background:#9fd400;color:black;font-weight:bold;">69.6</td>
+<td style="background:#67d000;color:white;font-weight:bold;">65.5</td>
+<td style="background:#0ec900;color:white;font-weight:bold;">59.0</td>
+<td style="background:#00c890;color:white;font-weight:bold;">47.4</td>
+<td style="background:#00c8e1;color:white;font-weight:bold;">41.5</td>
+<td style="background:#0079ff;color:white;font-weight:bold;">28.1</td>
+<td style="background:#00c892;color:white;font-weight:bold;">47.3</td>
+</tr>
+<tr><th>2025</th>
+<td style="background:#005aff;color:white;font-weight:bold;">23.8</td>
+<td style="background:#0072ff;color:white;font-weight:bold;">27.1</td>
+<td style="background:#00aeff;color:white;font-weight:bold;">35.8</td>
+<td style="background:#00c8be;color:white;font-weight:bold;">44.1</td>
+<td style="background:#00c83e;color:white;font-weight:bold;">53.4</td>
+<td style="background:#4ece00;color:white;font-weight:bold;">63.7</td>
+<td style="background:#a9d500;color:black;font-weight:bold;">70.3</td>
+<td style="background:#3bcc00;color:white;font-weight:bold;">62.3</td>
+<td style="background:#21ca00;color:white;font-weight:bold;">60.4</td>
+<td style="background:#00c87a;color:white;font-weight:bold;">49.0</td>
+<td style="background:#00b1ff;color:white;font-weight:bold;">36.2</td>
+<td style="background:#0064ff;color:white;font-weight:bold;">25.2</td>
+<td style="background:#00c8a4;color:white;font-weight:bold;">45.9</td>
+</tr>
+<tr><th>2026</th>
+<td style="background:#0051ff;color:white;font-weight:bold;">22.5</td>
+<td style="background:#0048ff;color:white;font-weight:bold;">21.1</td>
+<td style="background:#00a1ff;color:white;font-weight:bold;">33.9</td>
+<td style="background:#00c8d5;color:white;font-weight:bold;">42.4</td>
+<td style="background:#00c858;color:white;font-weight:bold;">51.5</td>
+<td style="background:#37cc00;color:white;font-weight:bold;">62.0</td>
+<td style="background:#d6d800;color:black;font-weight:bold;">73.6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#00c8c1;color:white;font-weight:bold;">43.9</td>
+</tr>
+<tr>
+<th style="background:#3f5f80;color:white;">Average</th>
+<td style="background:#006cff;color:white;font-weight:bold;">26.3</td>
+<td style="background:#006eff;color:white;font-weight:bold;">26.6</td>
+<td style="background:#00a9ff;color:white;font-weight:bold;">35.0</td>
+<td style="background:#00c8cd;color:white;font-weight:bold;">43.0</td>
+<td style="background:#00c854;color:white;font-weight:bold;">51.8</td>
+<td style="background:#33cc00;color:white;font-weight:bold;">61.7</td>
+<td style="background:#a1d400;color:black;font-weight:bold;">69.7</td>
+<td style="background:#72d000;color:white;font-weight:bold;">66.3</td>
+<td style="background:#20ca00;color:white;font-weight:bold;">60.3</td>
+<td style="background:#00c874;color:white;font-weight:bold;">49.5</td>
+<td style="background:#00b7ff;color:white;font-weight:bold;">37.0</td>
+<td style="background:#0087ff;color:white;font-weight:bold;">30.2</td>
+<td style="background:#00c89e;color:white;font-weight:bold;">46.4</td>
+</tr>
+</table>
+<h2>Average Temperature (°F)</h2><table>
+<tr><th>Year</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+<th>Average</th>
+</tr>
+<tr><th>2020</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#00baff;color:white;font-weight:bold;">37.5</td>
+<td style="background:#00baff;color:white;font-weight:bold;">37.5</td>
+</tr>
+<tr><th>2021</th>
+<td style="background:#009dff;color:white;font-weight:bold;">33.3</td>
+<td style="background:#009dff;color:white;font-weight:bold;">33.3</td>
+<td style="background:#00c8c7;color:white;font-weight:bold;">43.4</td>
+<td style="background:#00c855;color:white;font-weight:bold;">51.7</td>
+<td style="background:#23ca00;color:white;font-weight:bold;">60.5</td>
+<td style="background:#bcd600;color:black;font-weight:bold;">71.7</td>
+<td style="background:#eada00;color:black;font-weight:bold;">75.0</td>
+<td style="background:#f5db00;color:black;font-weight:bold;">75.8</td>
+<td style="background:#a4d400;color:black;font-weight:bold;">69.9</td>
+<td style="background:#34cc00;color:white;font-weight:bold;">61.8</td>
+<td style="background:#00c8b4;color:white;font-weight:bold;">44.8</td>
+<td style="background:#00c8cf;color:white;font-weight:bold;">42.8</td>
+<td style="background:#00c823;color:white;font-weight:bold;">55.3</td>
+</tr>
+<tr><th>2022</th>
+<td style="background:#0084ff;color:white;font-weight:bold;">29.8</td>
+<td style="background:#00adff;color:white;font-weight:bold;">35.6</td>
+<td style="background:#00c8c9;color:white;font-weight:bold;">43.3</td>
+<td style="background:#00c86b;color:white;font-weight:bold;">50.1</td>
+<td style="background:#3dcc00;color:white;font-weight:bold;">62.4</td>
+<td style="background:#a5d400;color:black;font-weight:bold;">70.0</td>
+<td style="background:#fbcb03;color:black;font-weight:bold;">78.2</td>
+<td style="background:#fdd301;color:black;font-weight:bold;">77.4</td>
+<td style="background:#90d300;color:black;font-weight:bold;">68.5</td>
+<td style="background:#00c815;color:white;font-weight:bold;">56.4</td>
+<td style="background:#00c880;color:white;font-weight:bold;">48.6</td>
+<td style="background:#00b5ff;color:white;font-weight:bold;">36.8</td>
+<td style="background:#00c82b;color:white;font-weight:bold;">54.8</td>
+</tr>
+<tr><th>2023</th>
+<td style="background:#00c8e7;color:white;font-weight:bold;">41.1</td>
+<td style="background:#00c8fd;color:white;font-weight:bold;">39.5</td>
+<td style="background:#00c8e1;color:white;font-weight:bold;">41.5</td>
+<td style="background:#00c827;color:white;font-weight:bold;">55.1</td>
+<td style="background:#24ca00;color:white;font-weight:bold;">60.6</td>
+<td style="background:#88d200;color:black;font-weight:bold;">67.9</td>
+<td style="background:#fdd202;color:black;font-weight:bold;">77.5</td>
+<td style="background:#dad900;color:black;font-weight:bold;">73.9</td>
+<td style="background:#94d300;color:black;font-weight:bold;">68.8</td>
+<td style="background:#0bc800;color:white;font-weight:bold;">58.8</td>
+<td style="background:#00c8be;color:white;font-weight:bold;">44.1</td>
+<td style="background:#00c8d6;color:white;font-weight:bold;">42.3</td>
+<td style="background:#00c81b;color:white;font-weight:bold;">55.9</td>
+</tr>
+<tr><th>2024</th>
+<td style="background:#00acff;color:white;font-weight:bold;">35.4</td>
+<td style="background:#00b8ff;color:white;font-weight:bold;">37.1</td>
+<td style="background:#00c8a8;color:white;font-weight:bold;">45.7</td>
+<td style="background:#00c859;color:white;font-weight:bold;">51.4</td>
+<td style="background:#38cc00;color:white;font-weight:bold;">62.1</td>
+<td style="background:#cbd700;color:black;font-weight:bold;">72.8</td>
+<td style="background:#fed800;color:black;font-weight:bold;">76.9</td>
+<td style="background:#ddd900;color:black;font-weight:bold;">74.1</td>
+<td style="background:#83d200;color:black;font-weight:bold;">67.5</td>
+<td style="background:#07c800;color:white;font-weight:bold;">58.5</td>
+<td style="background:#00c869;color:white;font-weight:bold;">50.3</td>
+<td style="background:#00afff;color:white;font-weight:bold;">35.9</td>
+<td style="background:#00c81f;color:white;font-weight:bold;">55.6</td>
+</tr>
+<tr><th>2025</th>
+<td style="background:#008aff;color:white;font-weight:bold;">30.6</td>
+<td style="background:#00a3ff;color:white;font-weight:bold;">34.2</td>
+<td style="background:#00c8b1;color:white;font-weight:bold;">45.0</td>
+<td style="background:#00c843;color:white;font-weight:bold;">53.0</td>
+<td style="background:#2dcb00;color:white;font-weight:bold;">61.3</td>
+<td style="background:#c6d700;color:black;font-weight:bold;">72.4</td>
+<td style="background:#fbc704;color:black;font-weight:bold;">78.6</td>
+<td style="background:#c2d700;color:black;font-weight:bold;">72.1</td>
+<td style="background:#97d300;color:black;font-weight:bold;">69.0</td>
+<td style="background:#00c802;color:white;font-weight:bold;">57.8</td>
+<td style="background:#00c8b1;color:white;font-weight:bold;">45.0</td>
+<td style="background:#009eff;color:white;font-weight:bold;">33.4</td>
+<td style="background:#00c831;color:white;font-weight:bold;">54.4</td>
+</tr>
+<tr><th>2026</th>
+<td style="background:#0080ff;color:white;font-weight:bold;">29.1</td>
+<td style="background:#0084ff;color:white;font-weight:bold;">29.7</td>
+<td style="background:#00c8c9;color:white;font-weight:bold;">43.3</td>
+<td style="background:#00c84c;color:white;font-weight:bold;">52.4</td>
+<td style="background:#2ccb00;color:white;font-weight:bold;">61.2</td>
+<td style="background:#cbd700;color:black;font-weight:bold;">72.8</td>
+<td style="background:#f1950f;color:black;font-weight:bold;">83.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#00c841;color:white;font-weight:bold;">53.2</td>
+</tr>
+<tr>
+<th style="background:#3f5f80;color:white;">Average</th>
+<td style="background:#009cff;color:white;font-weight:bold;">33.2</td>
+<td style="background:#00a8ff;color:white;font-weight:bold;">34.9</td>
+<td style="background:#00c8c3;color:white;font-weight:bold;">43.7</td>
+<td style="background:#00c84d;color:white;font-weight:bold;">52.3</td>
+<td style="background:#2ecb00;color:white;font-weight:bold;">61.3</td>
+<td style="background:#b6d600;color:black;font-weight:bold;">71.3</td>
+<td style="background:#fbca03;color:black;font-weight:bold;">78.3</td>
+<td style="background:#e5d900;color:black;font-weight:bold;">74.7</td>
+<td style="background:#94d300;color:black;font-weight:bold;">68.7</td>
+<td style="background:#09c800;color:white;font-weight:bold;">58.7</td>
+<td style="background:#00c89c;color:white;font-weight:bold;">46.6</td>
+<td style="background:#00bfff;color:white;font-weight:bold;">38.1</td>
+<td style="background:#00c826;color:white;font-weight:bold;">55.1</td>
+</tr>
+</table>
+<h2>Highest Temperature Recorded (°F)</h2><table>
+<tr>
+<th>Year</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr>
+<tr><th>2020</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#00c858;color:white;font-weight:bold;">72.5</td>
+</tr>
+<tr><th>2021</th>
+<td style="background:#0058ff;color:white;font-weight:bold;">52.9</td>
+<td style="background:#005bff;color:white;font-weight:bold;">53.2</td>
+<td style="background:#4ece00;color:white;font-weight:bold;">81.0</td>
+<td style="background:#1bca00;color:white;font-weight:bold;">78.4</td>
+<td style="background:#fedb00;color:black;font-weight:bold;">90.0</td>
+<td style="background:#f6b109;color:black;font-weight:bold;">93.0</td>
+<td style="background:#f7b508;color:black;font-weight:bold;">92.7</td>
+<td style="background:#ef8c11;color:white;font-weight:bold;">95.7</td>
+<td style="background:#cad700;color:black;font-weight:bold;">87.3</td>
+<td style="background:#6ad000;color:white;font-weight:bold;">82.4</td>
+<td style="background:#00c854;color:white;font-weight:bold;">72.7</td>
+<td style="background:#00beff;color:white;font-weight:bold;">63.1</td>
+</tr>
+<tr><th>2022</th>
+<td style="background:#0093ff;color:white;font-weight:bold;">58.8</td>
+<td style="background:#00c89b;color:white;font-weight:bold;">69.1</td>
+<td style="background:#00c860;color:white;font-weight:bold;">72.1</td>
+<td style="background:#09c800;color:white;font-weight:bold;">77.5</td>
+<td style="background:#ed8213;color:white;font-weight:bold;">96.4</td>
+<td style="background:#f9c006;color:black;font-weight:bold;">91.9</td>
+<td style="background:#e96d18;color:white;font-weight:bold;">97.9</td>
+<td style="background:#f1950f;color:black;font-weight:bold;">95.0</td>
+<td style="background:#eeda00;color:black;font-weight:bold;">89.1</td>
+<td style="background:#66d000;color:white;font-weight:bold;">82.2</td>
+<td style="background:#3dcc00;color:white;font-weight:bold;">80.1</td>
+<td style="background:#00b9ff;color:white;font-weight:bold;">62.6</td>
+</tr>
+<tr><th>2023</th>
+<td style="background:#00c8c2;color:white;font-weight:bold;">67.1</td>
+<td style="background:#00c862;color:white;font-weight:bold;">72.0</td>
+<td style="background:#00aeff;color:white;font-weight:bold;">61.5</td>
+<td style="background:#d4d800;color:black;font-weight:bold;">87.8</td>
+<td style="background:#bfd600;color:black;font-weight:bold;">86.7</td>
+<td style="background:#b1d500;color:black;font-weight:bold;">86.0</td>
+<td style="background:#f5a90b;color:black;font-weight:bold;">93.6</td>
+<td style="background:#fccd03;color:black;font-weight:bold;">91.0</td>
+<td style="background:#f09310;color:white;font-weight:bold;">95.2</td>
+<td style="background:#a7d500;color:black;font-weight:bold;">85.5</td>
+<td style="background:#00c8d4;color:white;font-weight:bold;">66.2</td>
+<td style="background:#00a3ff;color:white;font-weight:bold;">60.4</td>
+</tr>
+<tr><th>2024</th>
+<td style="background:#0088ff;color:white;font-weight:bold;">57.7</td>
+<td style="background:#007fff;color:white;font-weight:bold;">56.8</td>
+<td style="background:#00c84a;color:white;font-weight:bold;">73.2</td>
+<td style="background:#a7d500;color:black;font-weight:bold;">85.5</td>
+<td style="background:#ccd800;color:black;font-weight:bold;">87.4</td>
+<td style="background:#f6b109;color:black;font-weight:bold;">93.0</td>
+<td style="background:#f6ae0a;color:black;font-weight:bold;">93.2</td>
+<td style="background:#f29b0e;color:black;font-weight:bold;">94.6</td>
+<td style="background:#9fd400;color:black;font-weight:bold;">85.1</td>
+<td style="background:#7cd100;color:white;font-weight:bold;">83.3</td>
+<td style="background:#46cd00;color:white;font-weight:bold;">80.6</td>
+<td style="background:#0093ff;color:white;font-weight:bold;">58.8</td>
+</tr>
+<tr><th>2025</th>
+<td style="background:#0046ff;color:white;font-weight:bold;">51.1</td>
+<td style="background:#0090ff;color:white;font-weight:bold;">58.5</td>
+<td style="background:#4acd00;color:white;font-weight:bold;">80.8</td>
+<td style="background:#cad700;color:black;font-weight:bold;">87.3</td>
+<td style="background:#42cd00;color:white;font-weight:bold;">80.4</td>
+<td style="background:#dc2828;color:white;font-weight:bold;">102.9</td>
+<td style="background:#e96d18;color:white;font-weight:bold;">97.9</td>
+<td style="background:#f9c006;color:black;font-weight:bold;">91.9</td>
+<td style="background:#bfd600;color:black;font-weight:bold;">86.7</td>
+<td style="background:#95d300;color:black;font-weight:bold;">84.6</td>
+<td style="background:#00c89f;color:white;font-weight:bold;">68.9</td>
+<td style="background:#007fff;color:white;font-weight:bold;">56.8</td>
+</tr>
+<tr><th>2026</th>
+<td style="background:#0054ff;color:white;font-weight:bold;">52.5</td>
+<td style="background:#0062ff;color:white;font-weight:bold;">53.9</td>
+<td style="background:#00c83d;color:white;font-weight:bold;">73.9</td>
+<td style="background:#a7d500;color:black;font-weight:bold;">85.5</td>
+<td style="background:#f3a20c;color:black;font-weight:bold;">94.1</td>
+<td style="background:#ee8612;color:white;font-weight:bold;">96.1</td>
+<td style="background:#dd3125;color:white;font-weight:bold;">102.2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<td></td>
+</tr>
+</table>
+<h2>Lowest Temperature Recorded (°F)</h2><table>
+<tr>
+<th>Year</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr>
+<tr><th>2020</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#00abff;color:white;font-weight:bold;">16.0</td>
+</tr>
+<tr><th>2021</th>
+<td style="background:#009cff;color:white;font-weight:bold;">14.2</td>
+<td style="background:#00a2ff;color:white;font-weight:bold;">14.9</td>
+<td style="background:#00c8f0;color:white;font-weight:bold;">20.5</td>
+<td style="background:#00c86e;color:white;font-weight:bold;">28.8</td>
+<td style="background:#58ce00;color:white;font-weight:bold;">41.4</td>
+<td style="background:#bbd600;color:black;font-weight:bold;">47.7</td>
+<td style="background:#fbca03;color:black;font-weight:bold;">53.6</td>
+<td style="background:#ee8613;color:white;font-weight:bold;">59.7</td>
+<td style="background:#fed800;color:black;font-weight:bold;">52.3</td>
+<td style="background:#67d000;color:white;font-weight:bold;">42.4</td>
+<td style="background:#00c8c1;color:white;font-weight:bold;">23.5</td>
+<td style="background:#00c8c9;color:white;font-weight:bold;">23.0</td>
+</tr>
+<tr><th>2022</th>
+<td style="background:#0062ff;color:white;font-weight:bold;">7.0</td>
+<td style="background:#0097ff;color:white;font-weight:bold;">13.6</td>
+<td style="background:#00b0ff;color:white;font-weight:bold;">16.7</td>
+<td style="background:#00c851;color:white;font-weight:bold;">30.6</td>
+<td style="background:#1cca00;color:white;font-weight:bold;">37.6</td>
+<td style="background:#f3db00;color:black;font-weight:bold;">51.3</td>
+<td style="background:#f09210;color:white;font-weight:bold;">58.6</td>
+<td style="background:#f39f0d;color:black;font-weight:bold;">57.4</td>
+<td style="background:#76d100;color:white;font-weight:bold;">43.3</td>
+<td style="background:#00c81c;color:white;font-weight:bold;">34.0</td>
+<td style="background:#00c8ec;color:white;font-weight:bold;">20.8</td>
+<td style="background:#0064ff;color:white;font-weight:bold;">7.2</td>
+</tr>
+<tr><th>2023</th>
+<td style="background:#00c8a2;color:white;font-weight:bold;">25.5</td>
+<td style="background:#004aff;color:white;font-weight:bold;">3.9</td>
+<td style="background:#00c85e;color:white;font-weight:bold;">29.8</td>
+<td style="background:#00c850;color:white;font-weight:bold;">30.7</td>
+<td style="background:#38cc00;color:white;font-weight:bold;">39.4</td>
+<td style="background:#b1d500;color:black;font-weight:bold;">47.1</td>
+<td style="background:#ee8613;color:white;font-weight:bold;">59.7</td>
+<td style="background:#f1960f;color:black;font-weight:bold;">58.3</td>
+<td style="background:#dcd900;color:black;font-weight:bold;">49.8</td>
+<td style="background:#38cc00;color:white;font-weight:bold;">39.4</td>
+<td style="background:#00c8c1;color:white;font-weight:bold;">23.5</td>
+<td style="background:#00c8e2;color:white;font-weight:bold;">21.4</td>
+</tr>
+<tr><th>2024</th>
+<td style="background:#00b2ff;color:white;font-weight:bold;">16.9</td>
+<td style="background:#00bfff;color:white;font-weight:bold;">18.5</td>
+<td style="background:#00c8a9;color:white;font-weight:bold;">25.0</td>
+<td style="background:#00c835;color:white;font-weight:bold;">32.4</td>
+<td style="background:#59cf00;color:white;font-weight:bold;">41.5</td>
+<td style="background:#fac405;color:black;font-weight:bold;">54.1</td>
+<td style="background:#eb7a15;color:white;font-weight:bold;">60.8</td>
+<td style="background:#fcce02;color:black;font-weight:bold;">53.2</td>
+<td style="background:#b5d600;color:black;font-weight:bold;">47.3</td>
+<td style="background:#16c900;color:white;font-weight:bold;">37.2</td>
+<td style="background:#00c877;color:white;font-weight:bold;">28.2</td>
+<td style="background:#0073ff;color:white;font-weight:bold;">9.1</td>
+</tr>
+<tr><th>2025</th>
+<td style="background:#0075ff;color:white;font-weight:bold;">9.3</td>
+<td style="background:#00acff;color:white;font-weight:bold;">16.2</td>
+<td style="background:#00adff;color:white;font-weight:bold;">16.3</td>
+<td style="background:#00c849;color:white;font-weight:bold;">31.1</td>
+<td style="background:#8dd300;color:black;font-weight:bold;">44.8</td>
+<td style="background:#a0d400;color:black;font-weight:bold;">46.0</td>
+<td style="background:#ea7416;color:white;font-weight:bold;">61.3</td>
+<td style="background:#fed800;color:black;font-weight:bold;">52.3</td>
+<td style="background:#dcd900;color:black;font-weight:bold;">49.8</td>
+<td style="background:#1fca00;color:white;font-weight:bold;">37.8</td>
+<td style="background:#00c88f;color:white;font-weight:bold;">26.7</td>
+<td style="background:#00a2ff;color:white;font-weight:bold;">14.9</td>
+</tr>
+<tr><th>2026</th>
+<td style="background:#0065ff;color:white;font-weight:bold;">7.3</td>
+<td style="background:#0046ff;color:white;font-weight:bold;">3.4</td>
+<td style="background:#00c8fd;color:white;font-weight:bold;">19.7</td>
+<td style="background:#00c877;color:white;font-weight:bold;">28.2</td>
+<td style="background:#55ce00;color:white;font-weight:bold;">41.2</td>
+<td style="background:#9ed400;color:black;font-weight:bold;">45.9</td>
+<td style="background:#dc2828;color:white;font-weight:bold;">68.2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<td></td>
+</tr>
+</table>
+<h2>Total Precipitation (in)</h2><table>
+<tr><th>Year</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+<th>Total</th>
+</tr>
+<tr><th>2020</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="background:#cddef4;color:black;font-weight:bold;">1.92</td>
+<td>1.92</td>
+</tr>
+<tr><th>2021</th>
+<td style="background:#c4d9f2;color:black;font-weight:bold;">2.25</td>
+<td style="background:#c5d9f2;color:black;font-weight:bold;">2.23</td>
+<td style="background:#afcbed;color:black;font-weight:bold;">3.01</td>
+<td style="background:#a3c3eb;color:black;font-weight:bold;">3.46</td>
+<td style="background:#a6c5eb;color:black;font-weight:bold;">3.35</td>
+<td style="background:#d6e4f6;color:black;font-weight:bold;">1.58</td>
+<td style="background:#2e77d1;color:white;font-weight:bold;">7.80</td>
+<td style="background:#5893db;color:white;font-weight:bold;">6.23</td>
+<td style="background:#649add;color:white;font-weight:bold;">5.80</td>
+<td style="background:#8eb6e6;color:black;font-weight:bold;">4.24</td>
+<td style="background:#e8f0fa;color:black;font-weight:bold;">0.92</td>
+<td style="background:#dee9f7;color:black;font-weight:bold;">1.30</td>
+<td>42.17</td>
+</tr>
+<tr><th>2022</th>
+<td style="background:#aac8ec;color:black;font-weight:bold;">3.23</td>
+<td style="background:#b6d0ef;color:black;font-weight:bold;">2.75</td>
+<td style="background:#bdd4f0;color:black;font-weight:bold;">2.52</td>
+<td style="background:#b5cfef;color:black;font-weight:bold;">2.82</td>
+<td style="background:#92b8e7;color:black;font-weight:bold;">4.10</td>
+<td style="background:#9ec0ea;color:black;font-weight:bold;">3.64</td>
+<td style="background:#e8f0fa;color:black;font-weight:bold;">0.93</td>
+<td style="background:#edf3fb;color:black;font-weight:bold;">0.73</td>
+<td style="background:#a8c7ec;color:black;font-weight:bold;">3.28</td>
+<td style="background:#74a5e1;color:white;font-weight:bold;">5.19</td>
+<td style="background:#a2c3eb;color:black;font-weight:bold;">3.51</td>
+<td style="background:#9bbee9;color:black;font-weight:bold;">3.77</td>
+<td>36.47</td>
+</tr>
+<tr><th>2023</th>
+<td style="background:#95bbe8;color:black;font-weight:bold;">3.97</td>
+<td style="background:#e9f1fa;color:black;font-weight:bold;">0.88</td>
+<td style="background:#aecaed;color:black;font-weight:bold;">3.07</td>
+<td style="background:#7daae2;color:black;font-weight:bold;">4.89</td>
+<td style="background:#bfd5f1;color:black;font-weight:bold;">2.45</td>
+<td style="background:#d3e3f5;color:black;font-weight:bold;">1.68</td>
+<td style="background:#91b8e7;color:black;font-weight:bold;">4.14</td>
+<td style="background:#6a9fdf;color:white;font-weight:bold;">5.57</td>
+<td style="background:#216fcf;color:white;font-weight:bold;">8.28</td>
+<td style="background:#9fc1ea;color:black;font-weight:bold;">3.62</td>
+<td style="background:#d0e0f4;color:black;font-weight:bold;">1.81</td>
+<td style="background:#2370cf;color:white;font-weight:bold;">8.21</td>
+<td>48.57</td>
+</tr>
+<tr><th>2024</th>
+<td style="background:#6a9ede;color:white;font-weight:bold;">5.59</td>
+<td style="background:#dbe8f7;color:black;font-weight:bold;">1.39</td>
+<td style="background:#005ac8;color:white;font-weight:bold;">9.51</td>
+<td style="background:#adcaed;color:black;font-weight:bold;">3.11</td>
+<td style="background:#acc9ed;color:black;font-weight:bold;">3.14</td>
+<td style="background:#9bbee9;color:black;font-weight:bold;">3.77</td>
+<td style="background:#95bbe8;color:black;font-weight:bold;">3.97</td>
+<td style="background:#5993db;color:white;font-weight:bold;">6.22</td>
+<td style="background:#fafcfe;color:black;font-weight:bold;">0.25</td>
+<td style="background:#ffffff;color:black;font-weight:bold;">0.09</td>
+<td style="background:#c8dbf3;color:black;font-weight:bold;">2.09</td>
+<td style="background:#b1cdee;color:black;font-weight:bold;">2.94</td>
+<td>42.07</td>
+</tr>
+<tr><th>2025</th>
+<td style="background:#f8fafd;color:black;font-weight:bold;">0.32</td>
+<td style="background:#cbddf3;color:black;font-weight:bold;">1.99</td>
+<td style="background:#89b2e5;color:black;font-weight:bold;">4.44</td>
+<td style="background:#cedff4;color:black;font-weight:bold;">1.90</td>
+<td style="background:#80ace3;color:black;font-weight:bold;">4.78</td>
+<td style="background:#ccdef4;color:black;font-weight:bold;">1.95</td>
+<td style="background:#70a2e0;color:white;font-weight:bold;">5.37</td>
+<td style="background:#d6e4f6;color:black;font-weight:bold;">1.58</td>
+<td style="background:#c1d7f1;color:black;font-weight:bold;">2.37</td>
+<td style="background:#88b2e5;color:black;font-weight:bold;">4.46</td>
+<td style="background:#c8dbf3;color:black;font-weight:bold;">2.12</td>
+<td style="background:#9abee9;color:black;font-weight:bold;">3.79</td>
+<td>35.07</td>
+</tr>
+<tr><th>2026</th>
+<td style="background:#c3d8f2;color:black;font-weight:bold;">2.27</td>
+<td style="background:#b0ccee;color:black;font-weight:bold;">3.00</td>
+<td style="background:#91b8e7;color:black;font-weight:bold;">4.12</td>
+<td style="background:#c3d8f2;color:black;font-weight:bold;">2.30</td>
+<td style="background:#92b8e7;color:black;font-weight:bold;">4.09</td>
+<td style="background:#d6e4f6;color:black;font-weight:bold;">1.59</td>
+<td style="background:#ebf2fa;color:black;font-weight:bold;">0.80</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>18.17</td>
+</tr>
+<tr>
+<th style="background:#3f5f80;color:white;">Average</th>
+<td style="background:#b1cdee;color:black;font-weight:bold;">2.94</td>
+<td style="background:#cadcf3;color:black;font-weight:bold;">2.04</td>
+<td style="background:#89b2e5;color:black;font-weight:bold;">4.45</td>
+<td style="background:#aecaed;color:black;font-weight:bold;">3.08</td>
+<td style="background:#9ec0ea;color:black;font-weight:bold;">3.65</td>
+<td style="background:#c1d7f1;color:black;font-weight:bold;">2.37</td>
+<td style="background:#99bde9;color:black;font-weight:bold;">3.84</td>
+<td style="background:#93b9e7;color:black;font-weight:bold;">4.07</td>
+<td style="background:#95bae8;color:black;font-weight:bold;">4.00</td>
+<td style="background:#a2c2ea;color:black;font-weight:bold;">3.52</td>
+<td style="background:#c8dbf3;color:black;font-weight:bold;">2.09</td>
+<td style="background:#9ec0ea;color:black;font-weight:bold;">3.65</td>
+<td>40.87</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
